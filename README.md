@@ -74,6 +74,7 @@ T24 = [(D-12, D-11), ..., (D-3, D-2)]
 T48 = [(D-22, D-20), ..., (D-4, D-2)]
 
 각 구간에서 Lab / Procedure / Prescription 의료 이벤트 발생 여부를 **이진 벡터(0/1)** 로 표현하여 시계열 행렬로 구성합니다.  
+![Model Architecture](images/Figure1.png)
 
 ---
 
@@ -85,9 +86,7 @@ h24h = T2(T1(E(x24h)))
 h48h = T2(T1(E(x48h)))
 
 마지막 히든 벡터 4개를 concatenate하여 fully-connected layer로 전달:
-
-
-구조 그림 전체는 논문 Figure 2 참고.  
+![Model Architecture](images/Figure2.png)
 
 ---
 
